@@ -2,26 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package whilebilanganganjil;
+package forbilanganganjil;
 
 import java.util.Scanner;
-public class WhileBilanganGanjil {
+public class ForBilanganGanjil {
 
-    /**
-     * @hurinrazanah
-     */
+    
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.println("While bilangan ganjil");
+        Scanner s = new Scanner (System.in);
+        System.out.println("For bilangan ganjil");
         System.out.print("Masukkan nilai n: ");
         int n = s.nextInt();
-        int i = 1; 
-
-        while (i <= n) {
-            if (i % 2 != 0) {
-                System.out.println(i);
+        for (int i = 1; i <= n; i+= 2) {
+                System.out.println(i + " ");
             }
-            i++;
         }
     }
-}
